@@ -1,0 +1,13 @@
+services:
+  terraria:
+    build: .
+    ports:
+      - "7777:7777"
+    volumes:
+      - ./world.wld:/app/world.wld
+    environment:
+      - DIFFICULTY=0
+      - WORLD_NAME="Terraria"
+      - MAX_PLAYERS=4
+      - PASSWORD="CHANGEME"
+      - MOTD="Terraria on Docker"
