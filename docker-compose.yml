@@ -4,7 +4,7 @@ services:
     ports:
       - "7777:7777"
     volumes:
-      - ./world.wld:/app/world.wld
+      - ./world.wld:/app/world.wld:Z
     environment:
       - DIFFICULTY=0
       - WORLD_NAME="Terraria"
